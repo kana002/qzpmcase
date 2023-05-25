@@ -1,0 +1,449 @@
+@font-face {
+  font-family: AvenirNext;
+  src: url(AvenirNextLTPro-Regular.otf);
+
+  /* font-family: Mongolian Baiti; */
+}
+
+
+
+html, body{
+  font-family: 'AvenirNext', sans-serif;
+  padding-top: 100px;
+  margin: 0;
+  height: 100%;
+	width: 100%;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+nav {
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+	padding: 10px;
+	font-size: 1.2rem;
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #aaa;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+nav.stroke ul li a{
+position: relative;
+}
+nav.stroke ul li a:after{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #333;
+height: 1px;
+}
+nav.stroke ul li a:hover:after {
+width: 100%;
+}
+.home_container{
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  max-height: 100vh;
+
+}
+.home_text{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  width: 40%;
+  background-color: rgb(231, 234, 230);
+  padding-top: 200px;
+  padding-right: 50px;
+  float: right;
+}
+.home_text h1{
+  font-family: Mongolian;
+  font-weight: 400;
+  font-size: 72px;
+  text-align: left;
+}
+.home_text p{
+  font-size: 32px;
+
+}
+.home_image{
+  width: 60%;
+  float: left;
+  padding: 32px;
+}
+.home_image img{
+  max-width: 100%;
+  height: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.home2_container{
+  padding-top: 200px;
+  display: flex;
+  min-height: 100vh;
+  max-height: 200vh;
+  flex-direction: column;
+}
+.toks-container{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.left_image{
+  width: 40%;
+  background-color: rgb(231, 234, 230);
+  overflow: hidden;
+  position: relative;
+  float: right;
+  padding: 32px;
+
+}
+.anim_image{
+  max-width: 100%;
+  height: 500px;
+  float: right;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.right_text{
+  width: 40%;
+  padding: 20px;
+}
+.right_text p{
+  font-family:  Calibri, sans-serif;
+  font-weight: lighter;
+  width: 100%;
+  font-size: 20px;
+}
+.right_text p a{
+  text-decoration: none;
+  font-weight: lighter;
+  color: #212549;
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+
+}
+.scrollable-area{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.reactions_container{
+  height: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.reactions_list{
+  display: flex;
+  gap: 80px;
+}
+.reactions_list button img{
+  width: 35px;
+  height: 35px;
+}
+.reactions_list img{
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) ;
+  width: 70%;
+}
+
+/* .reactions_list img:hover {
+
+} */
+.text-container{
+-moz-user-select: none;  
+-webkit-user-select: none;  
+-ms-user-select: none;  
+-o-user-select: none;  
+user-select: none;	
+  font-size: 21px;
+  padding: 5px;
+  border: 2px solid lightgray;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.spacer{
+  width: 20%;
+  background-color: rgb(231, 234, 230);
+}
+.about_visible{
+  display: none;
+}
+.about_container{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:100%;
+  height: auto;
+	padding-top: 100px;
+}
+.about_research_container{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.about_research_heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: x-large;
+}
+.about_research_quote{
+  width: 40%;
+  position: relative;
+  float: right;
+  overflow: hidden;
+  padding: 32px;
+}
+.about_research_quote p{
+  font-size: 20px;
+}
+.about_research_photo{
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  float: right;
+  padding: 32px;
+
+}
+.about_research_photo img{
+  max-width: 70%;
+  max-height: 70%;
+}
+.books_block_container{
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; 
+  padding-bottom: 100px;
+}
+.books_block_container a{
+  padding: 16px 32px;
+  background-color: rgb(237, 125, 49);
+}
+
+.bookshelf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 100px;
+  padding: 50px;
+}
+.bookshelf img{
+  width: 30%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.cart_btn{
+  text-decoration: none;
+  background-color: rgb(237, 125, 49);
+  color: white;
+  padding: 36px 48px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Login CSS */
+#centered-div {
+  margin: auto;
+  width: 20%;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+#login-button{
+  width: 60%;
+  margin-top: 50px;
+  background-color: rgb(237, 125, 49);
+  color: white;
+  padding: 24px 36px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#login-button:hover{
+  background-color: #fff;
+  color: rgb(237, 125, 49);
+  border: 2px solid rgb(237, 125, 49);
+}
+#login-form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-width: 0 0 1px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: large;
+  font-family: AvenirNext;
+  outline: 0;
+}
+#login-form label{
+  margin-right: 50px;
+}
+/* Registration */
+
+#switch-container {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.switch {
+  display: inline-block;
+  color: #ccc;
+  padding: 10px;
+  border: 0 0 0 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.switch-active{
+  color: #333;
+}
+#non-resident-switch:active{
+  color: #333;
+}
+.switch a{
+  color: #ccc;
+  text-decoration: none;
+}
+
+#registration-form {
+  display: none;
+}
+
+#registration-form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#registration-form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-width: 0 0 1px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: large;
+  font-family: AvenirNext;
+  outline: 0;
+}
+
+
+#submit-button, #digital-signature-button{
+  width: 80%;
+  background-color: rgb(237, 125, 49);
+  color: white;
+  padding: 24px 36px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#submit-button:hover, #digital-signature-button:hover{
+  background-color: #fff;
+  color:rgb(237, 125, 49);
+  border: 2px solid rgb(237, 125, 49);
+}
+
+@media screen and (max-width: 1024px)
+  {
+html, body{
+	width: fit-content;
+}
+#centered-div{
+	width: 80%;
+}
+	.spacer{
+	display: hidden;
+	}
+    .home_container{
+      flex-direction: column;
+    }
+     .home_text{
+      width: 100%;
+      padding: 50px;
+    }
+    .home_image{
+      display: none;
+    }
+    .right_text{
+      padding: 50px;
+      width: 100%;
+    }
+    .left_image{
+      display: none;
+    }
+    .books_block_container{
+      width: 100%;
+      align-items: center;
+    }
+	.reactions_list{
+	gap: 30px;
+	justify-content: center;
+}
+    .bookshelf{
+      gap: 40px;
+    }
+    .bookshelf img{
+      width: 80%
+    }
+    .bookshelf img:first-child, .bookshelf img:last-child{
+      display: none;
+    }
+    .about_research_container{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .about_research_quote{
+      width: 80%;
+    }
+    .about_research_photo{
+      width: 80%;
+    }
+  }
+
+
+
